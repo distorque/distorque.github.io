@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>How Buffers Affect Your Tone - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>How Buffers Affect Your Tone</h1>
+<p>The buffer vs. true bypass argument still goes on, with both sides being blamed for &quot;tone sucking&quot;. The model that most people use is guitar output impedance -&gt; cable capacitance -&gt; amp input impedance. In reality, things are more complicated than that and there are many little variables that can alter tone.
+The truth is, there is a difference between plugging directly into an amp, or a true bypass effect chain, and plugging into a buffered effect chain. Let&#39;s use a more complex model and take a look at the differences.</p>
+<p><img src="https://sites.google.com/site/distorque/_/rsrc/1252097134069/home/articles/how-buffers-affect-your-tone-1/buffer-direct%20schem.bmp"></p>
+<p>The upper schematic shows a simulated humbucking pickup with tone and volume controls and cable capacitance going into a simulated amp&#39;s front end. The amp section consists of an the resistors from a tube amp&#39;s front end and a capacitor* that simulates the capacitance to ground caused by the tube&#39;s grid to cathode capacitance. The lower schematic is the same thing but with a buffer after the cable.</p>
+<p>This is how the frequency response turns out:</p>
+<p><img src="https://sites.google.com/site/distorque/home/articles/how-buffers-affect-your-tone-1/buffer-direct%20freq%20analysis.bmp"></p>
+<p>The direct/true bypass signal chain shows a small increase around 2kHz and a large reduction around and above 3kHz compared to the buffered chain. Which one is better is a personal choice.</p>
+<ul>
+<li>The 220p cap was not my idea. It comes from <a href="http://runoffgroove.com/fetzervalve.html">http://runoffgroove.com/fetzervalve.html</a></li>
+</ul>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

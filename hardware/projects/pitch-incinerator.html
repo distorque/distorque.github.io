@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>Pitch Incinerator - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>Pitch Incinerator</h1>
+<p>This is a fuzzy pitch divider. It is based on an opamp square wave clipper, and a 555 monostable oscillator. The guitar signal is amplified beyond the rails of the TL081, and becomes a square wave from 0 to about 6 volts. Then this is fed to the monostable oscillator. What this does is limits the maximum frequency that the output can be. Above this frequency, the pitch is shifted down, often in octaves, but sometimes in unpredictable intervals. The Intensity knob sets the maximum frequency, from above the guitar&#39;s range, to around 90Hz (a normal guitar goes from 82.407Hz to 1396.91Hz).</p>
+<p>There are useful settings in this (and tons of fun ones!), including a square wave fuzz with intensity at 7:00, an octave down up to the 12th fret on the E string at around 10:00, and weird sustain at all settings. It would be neat to have the intensity knob on an expression pedal, and do stepped fuzzy pitch drops.</p>
+<p><a href="https://sites.google.com/site/distorque/_/rsrc/1296160752508/home/projects/pitch-incinerator/Pitch%20Incinerator%201-1.png?height=421&amp;width=800"><strong>Schematic</strong></a></p>
+<p><a href="https://sites.google.com/site/distorque/home/projects/sound-clips/PitchIncineratorDemo.mp3?attredirects=0">Sound Clip</a><br>Bypass - Intensity 7:00 - Intensity 12:00 - Intensity 5:00 - Intensity 12:00 (sustain demo)</p>
+<p>The first four clips are just a chromatic scale played on the high E string. They show the pitch going down as the intensity knob goes up. The last setting is a open low E string and it shows how it does some weird pitch stuff even below its shift threshold.</p>
+<p><a href="https://sites.google.com/site/distorque/_/rsrc/1283461573688/home/projects/pitch-incinerator/Pitch%20Incinerator.gif">Unverified layout</a></p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

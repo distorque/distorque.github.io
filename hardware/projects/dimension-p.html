@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>Dimension P - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>Dimension P</h1>
+<p>This is a simple multi-phase chorus made using PT2399s. Multi-phase choruses are choruses with more than one voice, with each voice using a different phase of the LFO signal, such as the Boss Dimension C. They sound more deep than single-voice choruses, and they don&#39;t sound as annoyingly wobbly at high depth settings. This chorus uses two voices, with the LFO signals for each 180° out of phase with one another.</p>
+<p>The fact that there are two swept PT2399 delays means that there&#39;s flanging going an as well as chorusing. As the sweeps approach one another on higher depths, you get a subtle flanging sound. This is more prominent using the Dry On/Off mod (see below). Although I avoided it here, there&#39;s also potential for through-zero flanging, which can be achieved by adjusting R2 or R5.</p>
+<p><a href="https://sites.google.com/site/distorque/_/rsrc/1320504569305/home/projects/pictures/Dimension%20P%201-1%20small.png"><strong>Schematic</strong></a></p>
+<p>Here are schematics showing possible mods. Note that the stereo mod hasn&#39;t been tested yet.</p>
+<p><a href="https://sites.google.com/site/distorque/home/projects/pictures/DP%20Modded%201-1.png?attredirects=0"><strong>Dimension P Modded Schematic</strong></a></p>
+<p>The modded version has two added switches. The Dry switch selects whether the dry signal is mixed in or not. The Voice switch chooses between 1 and 2 voices. Between these two switches, you can get vibrato, normal 1-voice chorus, 2-voice chorus, or light flanging.</p>
+<p><a href="https://sites.google.com/site/distorque/home/projects/pictures/DP%20Stereo%201-1.png?attredirects=0"><strong>Dimension P Stereo Schematic</strong></a></p>
+<p>This version adds a switch that should select between Mono use (with the dry signal in Output B), and Stereo chorusing, with one voice and the dry signal going to each channel.</p>
+<p>Sound Clips:</p>
+<p><a href="https://sites.google.com/site/distorque/home/projects/sound-clips/dimensionpdemo.mp3?attredirects=0">Heavy chorus</a></p>
+<p><a href="https://sites.google.com/site/distorque/home/projects/sound-clips/dpdemo2.mp3?attredirects=0">Light chorus</a></p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

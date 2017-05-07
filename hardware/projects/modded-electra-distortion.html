@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>Modded Electra Distortion - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>Modded Electra Distortion</h1>
+<p>The Electra distortion is one of the simplest distortion circuits out there. It lends itself highly to modification, and many versions of it have been made. There have been a few boutique overdrives based on it, such as the Lovepedal COT 50, the Lovepedal Woodrow, and the Nick Greer Green Giant. There have also been a few DIY takes on it, such as the Beavis Audio Trotsky Drive and Fred Briggs&#39; Clock of Tone 50. Here&#39;s mine:</p>
+<p><a href="https://sites.google.com/site/distorque/_/rsrc/1322420669199/home/projects/modded-electra-distortion/Modded%20Electra%202-1.png"><strong>Schematic</strong></a></p>
+<p>This circuit is similar to the original Electra Distortion, with a few main differences. I added a distortion control in series with the input. This works similarily to the clean-up effect you get with this circuit as you turn your guitar&#39;s volume knob down.</p>
+<p>Updated June 25, 2011:<br>I took a look at the circuit again, and I&#39;ve made a couple of changes. The fat switch is gone, for simplicity&#39;s sake. I didn&#39;t find it that useful. I also removed the emitter bypass cap to increase the input impedance. Finally, I made a few value tweaks to increase gain and to smooth out the distortion. The end result is a nice, ZZ-Top-ish overdrive.</p>
+<p>Updated November 27, 2011:<br>Forgot the input capacitor. <em>Smacks forehead</em></p>
+<h3>Mods For The Electra Distortion</h3>
+<p><strong>Input/Output Capacitors</strong><br>The input and output capacitors in the original Electra distortion were both 0.1uF. They let through pretty much all of the inputted bass. By reducing them, you can roll off the bass. Decreasing the first input capacitor to 1nF-5nF gives a good treble boost tone.</p>
+<p><strong>Treble Rolloff Capacitor</strong><br>C2 in the above schematic is a treble rolloff capacitor, taking off treble to reduce the harshness of the clipping. In conjunction with changing the input and output capacitors, you can get anything from a full range effect to a mid boost only. I personally find the distortion too harsh without any treble rolloff cap, but that&#39;s a matter of personal preference. This could also be controlled with a switch or with series resistance.</p>
+<p><strong>Series Input Resistance</strong><br>As with many transistor-based distortions, the Electra distortion cleans up quickly with increased series input resistance. This partially expains the clean-up effect of reducing your guitar&#39;s volume, as this adds more series resistance with the input. This can be implemented, as I have, to reduce distortion.</p>
+<p><strong>Gain Control</strong><br>The transistor&#39;s gain can be increased by a lot by bypassing the emitter resistor with a fairly high-value capacitor (4.7uF+). Or, a gain control can be added by replacing the 680Ω resistor with a 1k pot going to ground, with the middle lug connected to a capacitor as before. By using a lower value bypass capacitor (0.1uF-1uF), a treble boost can be added, although I find it more effective to just add a high-value bypass capacitor and reduce the value of the input capacitor for a treble boost.</p>
+<p><strong>Diode Types</strong><br>By changing the clipping diode types, the overall output and distortion can be changed. Going from most clipping and least output, to least clipping and most output, diodes generally go: schottky, germanium, silicon, and LEDs. Germanium diodes and LEDs have softer clipping whereas silicon and schottky diodes clip more harshly.</p>
+<p><strong>Clipping Threshold Control</strong><br>A clipping threshold control can be added by putting a variable resistance from 10k to 50k in series with the clipping diodes.</p>
+<p>For more mods, check out<br><a href="http://www.diystompboxes.com/wiki/index.php?title=Simplemods#Simple.2C_Easy_Mods.2FTips_.26_Techniques">Simple, Easy Mods/Tips &amp; Techniques</a><br><a href="http://www.muzique.com/lab/warp.htm">Warp Controls</a><br><a href="http://www.muzique.com/lab/swtc.htm">SWTCs</a><br><a href="http://www.muzique.com/lab/sat2.htm">Saturation Controls</a><br><a href="http://www.muzique.com/lab/zenmos.htm">Zeners and MOSFETs</a></p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

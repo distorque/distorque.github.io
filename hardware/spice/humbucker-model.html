@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>Humbucker Spice Model - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>Humbucker Spice Model</h1>
+<p>This is a spice model of a humbucking guitar pickup. It simulates pickup inductance, pickup DC resistance, pickup eddy current (modelled by a resistor), pickup capacitance, tone controls and volume controls (at 10), and cable capacitance. In LTSpice, you can use this in an AC analysis or in a transient analysis. It has a voltage source that outputs a 0.2 volt sine wave at 200Hz and has an AC amplitude of 1 (for AC analyses).</p>
+<p>This has been made for LTSpice and may not work in other spice programs.</p>
+<pre><code>.subckt Humbucker + -
+Vpickup 1 - SINE(0 .2 200) AC 1
+Lpickup1 1 2 2.5
+Lpickup2 2 3 2.5
+Reddy 2 - 200k
+Rpickup 3 + 8k
+Cpickup + - 120p
+Ccable  + - 700p
+Rvolume + - 500k
+Rtone   + 4 500k
+Ctone   4 - 22n
+.ends</code></pre>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

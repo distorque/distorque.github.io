@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>EHX Nano Small Stone Mods - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>EHX Nano Small Stone Mods</h1>
+<p>I have the surface-mount filled nano Small Stone, which makes it very difficult to mod. When I opened it up, this is what I saw:</p>
+<p><img src="http://sites.google.com/site/distorque/_/rsrc/1265146502526/home/projects/pictures/ehx%20001.jpg?height=300&width=400"></p>
+<p>I thought, OK I&#39;ll do the vibrato switch, I only have to desolder a resistor. So I started comparing it to the schematic. It&#39;s nothing like it. In the nano small stone, there are no transistors, two opamp, two surface mount diodes, around 5 electrolytic caps, and many of the resistors have values like  27.4k or 392k. Tracing is impossible as the board is double-sided and many of the traces go under components. I quickly realized that any existing mods would be useless because I wouldn&#39;t be able to tell where to do them and because I wouldn&#39;t be able to solder them anyway. So I focused on making mods on the things I could solder to: the pot, the electrolytic caps, the jacks, and the 3PDT switch, and I found a great mod the lets you select sine, reverse sawtooth, or sawtooth LFO waves.</p>
+<p><img src="http://sites.google.com/site/distorque/_/rsrc/1265149517797/home/projects/pictures/Small%20Stone%20LFO%20mod.bmp"></p>
+<p>The sawtooth and reverse sawtooth modes are nice for having a more rhythmic sweep, more pulsating than swooshing. They are both faster than sine. I don&#39;t know if this would work for Small Stones other than the nano. Someone with a big Small Stone should try it out.</p>
+<p>Because of the shape of the PCB, the switch would have to be installed like this:</p>
+<p><img src="http://sites.google.com/site/distorque/_/rsrc/1265146502526/home/projects/pictures/ehx%20002.jpg?height=300&width=400"></p>
+<p>Here&#39;s a wiring diagram:</p>
+<p><img src="http://sites.google.com/site/distorque/_/rsrc/1265554523082/home/projects/pictures/small%20stone%20LFO%20mod.JPG"></p>
+<p><strong><a href="https://sites.google.com/site/distorque/home/projects/sound-clips/SmallStoneLFOModDemo.mp3?attredirects=0">Sound Clip</a></strong></p>
+<p>Bypass - Normal (Sine) - Sawtooth - Reverse Sawtooth</p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

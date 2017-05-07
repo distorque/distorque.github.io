@@ -1,0 +1,138 @@
+div,html {
+	margin : 0;
+	padding : 0;
+}
+
+a img {
+	border : none; /* IE puts borders around images with links -_- */
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+	background-color : #222;
+	font-family : "Noto Sans", "Segoe UI", Segoe, "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-size : 0.9em;
+	min-width : 750px;
+	height: 100%;
+}
+
+a {
+	color : #006631;
+}
+
+h1 {
+	margin-top : 5px;
+	margin-bottom : 5px;
+	font-weight : bold;
+	color : #003319;
+}
+
+#non-footer {
+	background-color : #367B56;
+	background-image : url(../img/lightgreenhammersmall.png);
+	min-height: 100%;
+	overflow: hidden;
+}
+
+#header {
+	background-color : #222;
+	position : relative;
+	-webkit-box-shadow: 0 0px 6px 0 #333;
+	   -moz-box-shadow: 0 0px 6px 0 #333;
+	        box-shadow: 0 0px 6px 0 #333;
+}
+
+#logo {
+	margin-left : 10px;
+	margin-top : 5px;
+	display : inline-block;
+}
+
+#logo :hover {
+	background-color : #333;
+}
+
+#menus {
+	float : right;
+	position : absolute;
+	right : 10px;
+	bottom : 15px;
+}
+
+#menus a {
+	text-decoration : none;
+	font-size : 1.5em;
+	margin-left : 5px;
+	margin-right : 5px;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	width : 70%;
+	padding : 15px;
+	background-color : #ddd;
+	border-bottom : 1px solid #111;
+	border-left : 1px solid #111;
+	border-right : 1px solid #111;
+	overflow : auto;
+}
+
+#footer {
+	color : #ccc;
+	background-color : #222;
+	text-align : center;
+	padding-top : 10px;
+	font-size : 0.75em;
+	-webkit-box-shadow: 0 0px 6px 0 #333;
+	   -moz-box-shadow: 0 0px 6px 0 #333;
+	        box-shadow: 0 0px 6px 0 #333;
+	border-top : 1px solid #181818;
+	position: relative;
+	margin-top: -100px;
+	height: 89px;
+	clear:both;
+}
+
+#footer a {
+	padding-left : 5px;
+	padding-right : 5px;
+	color : white;
+}
+
+#footer a:hover {
+	color : #66CC97;
+}
+
+#footer a:visited {
+	color : #D4CAFE;
+}
+
+.fancy-links a {
+	color : white;
+}
+.fancy-links a:visited {
+	color : #D4CAFE;
+}
+.fancy-links a:hover {
+	color : #66CC97;
+	background-color : #333;
+}
+
+img.centre {
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+img.border {
+	border : 1px solid black;
+}

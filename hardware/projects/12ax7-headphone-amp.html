@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>12AX7 Headphone Amp - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>12AX7 Headphone Amp</h1>
+<p>Note: This amplifier is intended for use with guitar, not as a hi-fi design.</p>
+<p>This is a simple class A headphone amp using a 12AX7 running off of 9V. I tried to design this to be as simple as possible while using common parts. For example, this project uses the ubiquitous 1k:8 ohm audio matching transformer as an OT rather than any expensive and hard-to-find tube OT. Really, the only obscure part here is the 10 ohm 2W resistor, but that can be faked. I used a 16 ohm 10W resistor in parallel with three 68 ohm 1/4W resistors.</p>
+<p>This circuit looks simple enough, but there are a few tricks to increase power and headroom. Firstly, the tubes are running in parallel. This is a simple way to give around 20% more power than a standard class A stage. Secondly, the power stage is running in class A2, which means that the grid voltage is biased positive, and that the grid draws current. On mine, the grid voltage is 0.57V. This again makes the amp more powerful, while reducing clipping. 12AX7s often can&#39;t run at 9V because they gate and clip too much, but the combination of the low anode load and the positive grid bias here makes for a pretty clean amp. For more info about class A2, check this out. The JFET stage on the input provides a boost, as well as presenting a low output impedance to the power stage.</p>
+<p>This thing sounds pretty good to me. It has a slight tubey compression at maximum volume, although it sounds more like a thicker tone than normal clipping. At lower volumes, it has a chimey, punchy sound. This thing sounds nice when overdriven slightly, although it can get blatty if driven too hard. It has pretty high headroom, so that&#39;s not a big issue. Still, a dirty version of this circuit might be in the works. I don&#39;t know what the power output here is, but I think it&#39;s in the region of a few hundred microwatts. With decent headphones it&#39;s loud enough, but far from painfully loud even at maximum volume. Anyway, enjoy!</p>
+<p><strong><a href="https://sites.google.com/site/distorque/_/rsrc/1300491888250/home/projects/pictures/12AX7%20Headphone%20Amp.png">Schematic</a></strong></p>
+<p>Notes: Any 12A*7 will work as the tube. You can use 12V with this circuit, but wire the heaters to run in parallel instead of in series and don&#39;t use a resistor in series with them. With the above schematic, the heaters are in parallel with each other and in series with the 10 ohm resistor.</p>
+<p><a href="http://www.aronnelson.com/gallery/main.php?g2_view=core.DownloadItem&amp;g2_itemId=44806&amp;g2_serialNumber=1">Unverified vero layout</a></p>
+<p>Please email me if you verify it.</p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

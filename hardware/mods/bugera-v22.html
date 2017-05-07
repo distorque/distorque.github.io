@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>Bugera V22 Mods - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>Bugera V22 Mods</h1>
+<p>I got a <a href="http://www.bugera-amps.com/en/products/v22.aspx">Bugera V22</a> early last year, for around $350 Canadian. I had to wait a few month for Bugera to ship it, but for the price I could wait. It&#39;s basically a Peavey Classic 30 with less power; it has 3 12AX7s and 2 EL84s for (allegedly) 22W. It&#39;s basically the cheapest non-practice tube amp out there. Which of course makes it a perfect modding platform.</p>
+<p>The amp sounds pretty good to begin with. It can be a bit ice-picky, but that seems to go away as the speaker breaks in. The clean channel is great, with a wide, open sound, although it has a bit of a upper-mid boost that isn&#39;t always desirable. The overdrive channel is less impressive. It&#39;s chunky (in a bad way) and it has a big mid hump (lacking bass and treble). Some people like it, but I don&#39;t. So my mods tried to fix all of these issues, along with a couple others.</p>
+<p>First, here are simplified schematics for the amp. They don&#39;t include switching, reverb, the bias supply, etc.<br><strong><a href="https://sites.google.com/site/distorque/home/projects/pictures/preamp.png?attredirects=0">Preamp</a></strong><br><strong><a href="https://sites.google.com/site/distorque/home/projects/pictures/poweramp.png?attredirects=0">Power Amp</a></strong></p>
+<p>And here are the mods I did.<br><strong><a href="https://sites.google.com/site/distorque/home/mods/bugera-v22/pics/v22preampmod.png?attredirects=0">Modded Preamp</a></strong><br><strong><a href="https://sites.google.com/site/distorque/home/mods/bugera-v22/pics/v22powerampmod.png?attredirects=0">Modded Power Amp</a></strong></p>
+<p>And here is a sound clip, mainly for the OD channel:<br><strong><a href="https://sites.google.com/site/distorque/home/mods/bugera-v22/V22%20Demo.mp3?attredirects=0">Sound Clip</a></strong></p>
+<p>New: A forumite on tube-town.de called netbear has done a nearly full trace. His schematic includes the bias supply, switching, and heater wiring. I admire his patience.<br><strong><a href="http://www.tube-town.de/ttforum/index.php/topic,11942.msg156057.html#msg156057">Eagle file</a></strong><br><strong><a href="http://i1123.photobucket.com/albums/l552/asdain/Bugera%20V22%20Modding/bugerav22.png">Image</a></strong></p>
+<h2>Note: Do not work on amps unless you know how to handle the high voltages present safely.</h2>
+<p>OK, going from input to speaker, here are the mods.</p>
+<p>Clean channel</p>
+<ul>
+<li>I reduced the cap on the Bright input to 3.3n. This makes the input sound like less of a bass cut, and more of a treble boost. Note that this reduces the signal level.</li>
+<li>I removed the 1n cap before the Clean Volume pot. This gets rid of the upper mid/treble boost that the clean channel has. This also makes the bright input more usable. The channel is still pretty sparkly, but the treble isn&#39;t as overpowering.</li>
+</ul>
+<p>OD channel</p>
+<ul>
+<li>I increased the OD input capacitor to 2.2n to increase the bass in that channel.</li>
+<li>I removed the 470p capacitor to ground at V1b to increase treble.</li>
+<li>After the other mods, there was some blocking (farty) distortion at V1b, so I put in a 100k grid stopper.</li>
+<li>I increased V1b&#39;s cathode bypass capacitor to 22u, again for more bass.</li>
+<li>I put a 1n cap to ground at V1b&#39;s plate to soften out its distortion.</li>
+<li>I increased the next coupling cap to 10n for even moar bass.</li>
+<li>I removed V2a&#39;s cathode bypass capacitorto lessen its gain.</li>
+</ul>
+<p>These mods make the OD channel more useful IMO. The high gain tones are pretty messy (not necessarily in a bad way), but the crunch tones in the first half of the Gain knob are much sweeter and without the big bass and treble cuts. YMMV.</p>
+<p>Power Amp</p>
+<ul>
+<li>I threw in a 470k grid stopper on the advice of <a href="http://www.freewebs.com/valvewizard/cathodyne.html">The Valve Wizard</a>.</li>
+<li>I cut the ground trace on one of the EL84s, and put in a 1 ohm resistor. I rewired the bias test output to connect to either side of the resistor, so I can now bias one of the tube to 22mA idle, then swap the power tubes and check the other one. This lets me bias accurately instead of using Bugera&#39;s method.</li>
+</ul>
+<p>There you go. The OD channel is the trickiest one to get right, but I&#39;m happy with what I&#39;ve come up with. Mod away!</p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

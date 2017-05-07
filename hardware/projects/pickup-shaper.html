@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>Pickup Shaper - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>Pickup Shaper</h1>
+<p>This is a pickup resonance shifter and modifier. Guitar pickups form an LRC resonant filter, with the pickups&#39; inductance and resistance, and their parasitic capacitance, along with your cable capacitance.This circuit reacts with your pickups to change their resonant frequency, the resonance&#39;s Q, and the bass response. This makes natural sounding tonal changes, and can make your pickups sound like completely different types of pickups. Also, it can be used for resonant frequency boosts.</p>
+<p>There are already passive circuits out there that alter pickup resonance: the Varitone, the THD Quintet, etc. They more or less use a inductor in series with a resistor and switchable capacitor, connected from the input to ground. These circuits can achieve treble cuts, but not treble boosts. This makes them bad for use with humbuckers. This circuit is designed to be like those effects, but more versatile and more effective for humbuckers.</p>
+<p>This circuit is made up of a switchable capacitor to ground, which increases resonance and decreases resonant frequency, an opamp gyrator (simulated inductor) to ground, a volume control, and a FET amplifier stage. The gyrator is the main section that affects pickup tone.The effects I just mentioned use a fixed inductor, but using a gyrator has two advantages: it doesn&#39;t require hard to get and expensive high value inductors, and its simulated inductance is adjustable, which is more effective for tonal changes. It is adjustable from 0.47H to 10.47H.</p>
+<p>As the frequency control is turned up, pickup resonance goes up, the resonant frequency goes up, volume goes down (but this can be fully compensated by the amplifier stage), and the bass goes down. The bass control blends in bass at high frequency settings, and reduces resonance. The shift switch increases resonance and decreases the resonant frequency. The controls are interactive, but can give all kinds of natural pickup sounds, resonant boosts, and subtle tone shifts. Your guitar volume and tone controls don&#39;t act normally with this effect, but they can be used to change pickup sound even more. The volume control sounds normal at maximum, but turning it down slightly takes out all frequencies except for the resonance. Below that it mutes your signal. The tone control acts normally for most of its rotation, but all the way down, it increases resonance a lot, and sounds like a fixed wah.</p>
+<p><a href="https://sites.google.com/site/distorque/_/rsrc/1270332844507/home/projects/pickup-shaper/Pickup%20Shaper.JPG"><strong>Schematic</strong></a></p>
+<p><a href="https://sites.google.com/site/distorque/home/projects/sound-clips/PickupShaperDemo.mp3?attredirects=0">Sound Clip</a><br>Bypass  -  Bass 12:00 Freq. 2:00 Shift Off  -  Bass 7:00 Freq. 12:00 Shift On  -  Fixed Wah (Bass 7:00 Freq. 2:00 Shift On) Guitar tone at maximum, then at minimum<br>Neck Humbucker</p>
+<p>The first setting is my favourite, it makes a humbucker sound like a single coil, but with more bass; it&#39;s a nice halfway point. This pedal is nice for settings like that, using a high resonant frequency to add clarity, then blending in enough bass with the bass control. It sounds like a real pickup, but a completely different one.<br>The second setting shifts the resonant frequency down, rather than up, for a mid boosted sound. This is less natural sounding, but can be useful too.<br>The last setting is a demonstration of the fixed wah effect you can get by turning down the guitar&#39;s tone control<br>The sound clip was recorded with an unshielded guitar and with the circuit on a breadboard, so  it&#39;s more noisy than the circuit really is.</p>
+<p>Notes:<br>A 1kA (log) pot can be used for the frequency control, it will just be backwards. This pedal should be first in your signal chain, so that it can interact directly with your pickups.<br>Gyrators are a bit noisy by nature. I don&#39;t find this particularly irritating, but if you&#39;re the samarium cobalt noiseless pickups shielded with non-magnetic aluminum type of person, you might want to use a normal tone control.</p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+

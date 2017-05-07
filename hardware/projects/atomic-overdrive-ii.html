@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="DIY guitar effects, VST plugins, and other audio stuff.">
+		<base href="http://distorqueaudio.com">
+		<title>Atomic Overdrive II - Distorque Audio</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    </head>
+
+    <body>
+		<div id="non-footer">
+			<div id="header">
+				<a id="logo" href="index.html"><img id="log2o" src="img/distorquelogotextsmall.png" alt="Distorque Audio"></a>
+				<span id="menus" class="fancy-links">
+					<a href="plugins.html">Plugins</a>
+					<a href="hardware.html">Hardware</a>
+					<a href="contact.html">Contact</a>
+				</span>
+			</div>
+			<div id="sidebar" class="fancy-links">
+	<b>Hardware</b>
+	<br>
+	<a href="hardware&#x2F;articles.html">
+		<img src="img&#x2F;articleicon.png" class="img-left">
+		<span class="text">
+		Articles
+			<br><span class="description">Guitar effect tips and technical notes</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;mods.html">
+		<img src="img&#x2F;modsicon.png" class="img-left">
+		<span class="text">
+		Mods
+			<br><span class="description">Amp and effect modding guides</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;projects.html">
+		<img src="img&#x2F;projecticon.png" class="img-left">
+		<span class="text">
+		Projects
+			<br><span class="description">Some of my guitar effect pedal designs</span>
+		</span>
+	</a>
+	<a href="hardware&#x2F;spice.html">
+		<img src="img&#x2F;spiceicon.png" class="img-left">
+		<span class="text">
+		Spice
+			<br><span class="description">Spice simulation models and resources</span>
+		</span>
+	</a>
+</div>
+
+			<div id="content">
+				<h1>Atomic Overdrive II</h1>
+<p>Note: As far as I know, this design is completely unrelated to the XAct Tone Atomic Overdrive. In my defense, I had the name first.</p>
+<p>v1.4 June 28, 2011
+The Atomic Overdrive II is an improved version of the original Atomic Overdrive. With a few more parts, and one more control, it has more gain available, more tonal range, and, in my opinion, is better sounding. The circuit is similar to the original, but with a few major differences. Firstly, the FETs have been changed from MPF102s to J201s, which have more gain. The gain control has been modified and a range switches have been added for more control over the overdrive colour. The Atomic Overdrive II also keeps all of the good characteristics that the Atomic Overdrive had, such as good dynamics, transparent tones available, and smooth clipping.</p>
+<p>The range control varies the cutoff frequency of a highpass filter on the input. It also varies the input impedance, so when the switch is open the circuit&#39;s input impedance is relatively high, and the filter passes everything above 130Hz-ish. At this setting, you can get transparent tones with little filtering. With the switch closed, the filter&#39;s cutoff is much higher, which reduces bass, but the input impedance is lower, which reduces treble. This makes a frequency peak in the upper mids, just like a treble booster like the Dallas Rangemaster. This control works best when the Atomic Overdrive II is placed directly after the guitar in your signal chain.</p>
+<p>Note: In v1.4, I&#39;ve added a boost switch. It&#39;s a useful and simple mod.</p>
+<p><a href="https://sites.google.com/site/distorque/_/rsrc/1309275404333/home/projects/atomic-overdrive-ii/Atomic%20Overdrive%20II%201-4.png"><strong>Schematic</strong></a></p>
+<p><a href="https://sites.google.com/site/distorque/home/projects/sound-clips/ao2demo.mp3?attredirects=0">Sound Clip</a><br>0:00 - 0:08 - Low Range, Boost on.<br>0:08 - End - High Range, Boost off.</p>
+<p>Try various JFETs in this circuit. Different J201s can sound different.</p>
+
+			</div>
+		</div>
+		<div id="footer">
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+			<br><br>© 2013 Distorque Audio.<br>
+			VST is a trademark of Steinberg Media Technologies GmbH. All other trademarks property of their respective owners.<br>
+			Site built by Distorque Audio using Node.js, Mustache, and Markdown.
+		</div>
+		<script src="js/ga.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/dom-shims.js"></script>
+		<script src="js/global.js"></script>
+		
+    </body>
+    
+</html>
+
